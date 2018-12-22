@@ -23,13 +23,13 @@
 define('DB_NAME','wordpress');
 
 /** MySQL database username */
-define('DB_USER','wordpress_user');
+define('DB_USER','root');
 
 /** MySQL database password */
-define('DB_PASSWORD','ABCD1234');
+define('DB_PASSWORD','123456');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost:/run/mysqld/mysqld10.sock');
+define('DB_HOST', '127.0.0.1');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -112,3 +112,4 @@ require_once(ABSPATH . 'syno-misc.php');
 
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 add_filter('pre_site_transient_update_core','__return_null');
+?>
